@@ -1,0 +1,94 @@
+----item----
+version: 1
+id: {828FA522-CA72-4A75-86A9-AF70D6679B0E}
+database: core
+path: /sitecore/client/Your Apps/Coffeehouse/Layouts/Renderings/ChartByGoogle/ChartByGoogle-Parameters/__Standard Values
+parent: {8D8FD433-AA8D-4C6F-8C1B-19387CCACD9A}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {8D8FD433-AA8D-4C6F-8C1B-19387CCACD9A}
+templatekey: ChartByGoogle-Parameters
+created: 20160815T030729:636068272495870000
+
+----field----
+field: {6D0C0AB0-BC40-4BD0-8ACB-16612A180F14}
+name: IsVisible
+key: isvisible
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: a44b14b5-2e55-44ec-9601-d95b72caaf44
+
+----field----
+field: {32EA9919-86C5-4071-BAF1-A392A55C3AD1}
+name: ChartByGoogleStartDate
+key: chartbygooglestartdate
+content-length: 9
+
+30daysago
+----field----
+field: {560BD416-EB3F-4309-A1AC-3A63B58CAD55}
+name: ChartByGoogleEndDate
+key: chartbygoogleenddate
+content-length: 5
+
+today
+----field----
+field: {A6FDEB5C-E5B3-4888-86FB-2D6BABB1718C}
+name: Dimensions
+key: dimensions
+content-length: 7
+
+ga:date
+----field----
+field: {60E4C6B8-6D8A-4D71-B664-792E11B3EB66}
+name: Metrics
+key: metrics
+content-length: 11
+
+ga:sessions
+----field----
+field: {3E206657-F219-47DC-8DB6-40564E4D75A8}
+name: ProfileId
+key: profileid
+content-length: 12
+
+ga:126011915
+----field----
+field: {4908DEEB-C76A-43A2-A2F8-EBFCA8EE6370}
+name: ChartType
+key: charttype
+content-length: 4
+
+LINE
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160815T030729Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a44b14b5-2e55-44ec-9601-d95b72caaf44
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160906T191710Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

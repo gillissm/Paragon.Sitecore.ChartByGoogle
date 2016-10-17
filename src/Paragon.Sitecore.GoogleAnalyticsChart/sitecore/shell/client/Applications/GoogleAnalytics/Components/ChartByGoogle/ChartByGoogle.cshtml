@@ -1,0 +1,35 @@
+﻿@using Sitecore.Web.UI.Controls
+
+@model Paragon.Sitecore.GoogleAnalyticsChart.ViewModels.ChartByGoogleViewModel
+
+@{
+    //https://mikerobbins.co.uk/2015/10/20/sitecore-speak-2-0-component-vs-speak-1-1/
+    Model.Class.Append("sc-ChartByGoogle");
+    Model.Class.Append("sc-listcontrol");
+    Model.Requires.Remove(new RequireDescriptor(RequireType.JavaScript, "components", "ChartByGoogle.js"));
+    Model.Requires.Add(new RequireDescriptor(RequireType.JavaScript, "chartbygoogle", "ChartByGoogle.js"));
+    Model.Requires.Add(new RequireDescriptor(RequireType.JavaScript, "client", "bootstrap.js"));
+    Model.DataBind.IsEnabled("true");
+
+}
+@*//https://ga-dev-tools.appspot.com/embed-api/basic-dashboard/*@
+<div @Model.HtmlAttributes>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3><span  data-bind="text: ReportTitle"></span></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div id="@Model.ControlId"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                &nbsp;
+            </div>
+        </div>        
+    </div>
+</div>

@@ -3,7 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Core", "src\TDS.Core\TDS.Core.scproj", "{0B229D55-5E80-48FB-A33E-4EF1D730A22B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documents", "_Documents", "{02A55BCC-36C1-440E-9AB8-42718F2CA720}"
+	ProjectSection(SolutionItems) = preProject
+		_Documents\README.md = _Documents\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paragon.GoogleAnalytics.Repository", "src\Paragon.GoogleAnalytics.Repository\Paragon.GoogleAnalytics.Repository.csproj", "{3FE2DC5B-6E69-45BA-9BC3-4C2532A0F1E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paragon.GoogleAnalytics.Factory", "src\Paragon.GoogleAnalytics.Factory\Paragon.GoogleAnalytics.Factory.csproj", "{E74633A2-030F-4326-8873-7ADD99C47876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paragon.Sitecore.GoogleAnalyticsChart", "src\Paragon.Sitecore.GoogleAnalyticsChart\Paragon.Sitecore.GoogleAnalyticsChart.csproj", "{6ED5365B-F708-4345-A137-7A0487B7A299}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B229D55-5E80-48FB-A33E-4EF1D730A22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B229D55-5E80-48FB-A33E-4EF1D730A22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B229D55-5E80-48FB-A33E-4EF1D730A22B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0B229D55-5E80-48FB-A33E-4EF1D730A22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B229D55-5E80-48FB-A33E-4EF1D730A22B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B229D55-5E80-48FB-A33E-4EF1D730A22B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3FE2DC5B-6E69-45BA-9BC3-4C2532A0F1E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE2DC5B-6E69-45BA-9BC3-4C2532A0F1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE2DC5B-6E69-45BA-9BC3-4C2532A0F1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE2DC5B-6E69-45BA-9BC3-4C2532A0F1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E74633A2-030F-4326-8873-7ADD99C47876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E74633A2-030F-4326-8873-7ADD99C47876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E74633A2-030F-4326-8873-7ADD99C47876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E74633A2-030F-4326-8873-7ADD99C47876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED5365B-F708-4345-A137-7A0487B7A299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED5365B-F708-4345-A137-7A0487B7A299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED5365B-F708-4345-A137-7A0487B7A299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED5365B-F708-4345-A137-7A0487B7A299}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

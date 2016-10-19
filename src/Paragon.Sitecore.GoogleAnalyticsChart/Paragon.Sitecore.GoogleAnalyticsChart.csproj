@@ -185,7 +185,7 @@
     <Content Include="App_Config\Include\z.Pargon.GoogleAnalyticsChart\z.Paragon.GoogleAnalyticsChart.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sitecore\shell\client\Applications\GoogleAnalytics\Components\ChartByGoogle\ChartByGoogle.js" />
+    <Content Include="sitecore\shell\client\Applications\GoogleAnalytics\Components\ChartByGoogle.js" />
     <Content Include="sitecore\shell\client\Applications\GoogleAnalytics\Scripts\GA.js" />
   </ItemGroup>
   <ItemGroup>

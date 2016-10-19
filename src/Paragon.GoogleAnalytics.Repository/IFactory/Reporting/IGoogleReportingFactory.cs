@@ -1,5 +1,6 @@
 ﻿using Google.Apis.Analytics.v3;
 using Google.Apis.AnalyticsReporting.v4;
+using Google.Apis.AnalyticsReporting.v4.Data;
 using Google.Apis.Auth.OAuth2;
 using Paragon.GoogleAnalytics.Repository.Model;
 
@@ -36,5 +37,4 @@ namespace Paragon.GoogleAnalytics.Repository.IFactory.Reporting
         AnalyticsReportingService GetV4Service(ServiceCredential creds, string applicationname = "Report v4");
         #endregion
     }
-}
 }

@@ -285,6 +285,7 @@ namespace Paragon.GoogleAnalytics.Factory.ReportingFactory
                 return null;
             }
         }
+        
         #endregion
     }
 }

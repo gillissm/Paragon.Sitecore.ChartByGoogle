@@ -1,0 +1,77 @@
+----item----
+version: 1
+id: {C2ADA069-C4BC-46E3-B4C4-62CAFD33F7BA}
+database: core
+path: /sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/Branches/Speak20/Dashboard20/$name
+parent: {79BB8DBD-9AE5-42D8-AE90-0EF2BDFAC4B6}
+name: $name
+master: {00000000-0000-0000-0000-000000000000}
+template: {B11AFCCD-C286-4384-B694-4465D6C605DE}
+templatekey: Speak-DashboardPage
+created: 20160812T120321:636066002014930000
+
+----field----
+field: {5E642935-A6FC-48E9-B039-FE1136CED488}
+name: Theme
+key: theme
+content-length: 7
+
+Harvard
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 2695
+
+<r>
+  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{4F72A793-BDBC-4262-9523-6AADD8FEA487}">
+    <r id="{DAFAFFB8-74AF-4141-A96A-70B16834CEC6}" par="SpeakCoreVersion=%7b3F937240-C16E-4229-9641-4CE5B4CB4ABA%7d&amp;PageCodeTypeName=Sitecore.ExperienceAnalytics.Client.ExperienceAnalyticsPageCode%2c+Sitecore.ExperienceAnalytics.Client" ph="Page.Code" uid="{31C3B733-66F0-448D-8A45-E06FD72684F4}" />
+    <r id="{6C3780DC-2D6F-49E6-B63F-07D67C0FDDA7}" ph="Page.Body" uid="{D1A19E2F-5211-4994-A144-E1DB3E6D6619}" />
+    <r id="{78D8260C-4FF9-4627-BF64-0B884ACA4BA1}" ph="GlobalHeader" uid="{803F8F41-6CB6-46A3-8D67-2CF8492D638A}" />
+    <r id="{C220369A-84A3-482B-A936-F75CDCB23736}" par="ImageUrl=%25252525252fsitecore%25252525252fshell%25252525252fclient%25252525252fSpeak%25252525252fAssets%25252525252fimg%25252525252fspeak-logo.png&amp;Id=GlobalLogo" ph="GlobalHeader.StartButton" uid="{186E5E82-94C4-4C71-B729-A0DEDE12D711}" />
+    <r id="{1E1E272D-AC0C-4908-B86E-056F18C8DC99}" par="Id=NavigationToggle" ph="GlobalHeader.NavigationToggler" uid="{522D3D6B-37F9-4D35-AE8E-5DC8EBFB9858}" />
+    <r id="{0DD00367-0B7D-4955-BB70-397523711B6D}" par="Id=AccountInformation" ph="GlobalHeader.LoginInfo" uid="{84A727DB-A684-495A-85CA-62432E87F459}" />
+    <r id="{A9C1F47A-1E2B-4852-946F-6F9FAB939056}" ph="GlobalFooter" uid="{C3C0CCEA-92EB-46EA-86F7-BF63D248BDD6}" />
+    <r id="{047F31EF-7D7D-42E5-BC9B-F39FEAB0B83B}" ph="ApplicationHeader" uid="{7E7941FB-89D8-4A67-8912-2FB97B601007}" />
+    <r id="{EFCD0AB0-5B9D-4F1D-AB81-BE0336CD273C}" par="TextWeight=Bold&amp;Id=HeaderTitle&amp;TextSize=Medium&amp;TextStyle=Normal" ph="ApplicationHeader.Title" uid="{F9ED019C-1DDD-4AEC-9F42-4BA56903A329}" />
+    <r id="{89C69D11-A416-4193-938C-3D631DCD1798}" par="Id=Breadcrumb&amp;StaticData=%7bBCDEDA7A-D6DC-4D2F-9570-7D7F89AAAA0B%7d" ph="ApplicationHeader.BreadCrumb" uid="{E47A720C-3503-4C9C-94F7-CBD62322D552}" />
+    <r id="{78E022DA-DD10-47C8-A843-F7A1F18D0A87}" ph="Page.Body" uid="{E4D02DCB-E132-4DF0-AD34-6304957FE2DD}" />
+    <r id="{32865DBA-6067-4282-8681-0A10CAB13329}" par="Id=Navigation&amp;StaticData=%7bBCDEDA7A-D6DC-4D2F-9570-7D7F89AAAA0B%7d" ph="ApplicationContent.Navigation" uid="{C202E78C-CEAC-4F3B-95B8-279DD6D9EE35}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=MsgBorder" ph="ApplicationContent.Main" uid="{F685CD22-D0FE-4C6E-A7DD-C9FC6672BC40}" />
+    <r id="{8C3B1C75-9DBA-49BC-AC49-CD9AD5559FD6}" par="Id=MessageBar" ph="MsgBorder.Content" uid="{F1B33522-9044-4CE6-8C74-6A88DDE2B24C}" />
+    <r id="{08994B8F-7BF1-4963-815D-0FA8D75B3D86}" par="Id=Main" ph="ApplicationContent.Main" uid="{DAECACF6-3DFC-4896-A144-FA97DAEB8112}" />
+  </d>
+</r>
+----version----
+language: en
+version: 1
+revision: d4c68f9c-9956-46e4-9b8f-3e556ff61c94
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160812T120321Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d4c68f9c-9956-46e4-9b8f-3e556ff61c94
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20160823T133227Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

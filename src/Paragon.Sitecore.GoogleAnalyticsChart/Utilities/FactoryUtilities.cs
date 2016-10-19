@@ -1,6 +1,6 @@
 ﻿using Paragon.GoogleAnalytics.Repository.IFactory.Reporting;
 using Paragon.GoogleAnalytics.Repository.IFactory.Authorization;
-using Sitecore.DependencyInjection;
+using Sitecore.Configuration;
 
 namespace Paragon.Sitecore.GoogleAnalyticsChart.Utilities
 {
@@ -12,8 +12,7 @@ namespace Paragon.Sitecore.GoogleAnalyticsChart.Utilities
         /// <returns></returns>
         public static IGoogleAuthorizationFactory GetGoogleAuthorizationFactory()
         {
-            return ServiceLocator.ServiceProvider.GetService((typeof(IGoogleAuthorizationFactory))) as IGoogleAuthorizationFactory;
-            //return Sitecore.Configuration.Factory.CreateObject("googlefactory/authorizationfactory", true) as IGoogleAuthorizationFactory;
+            return Factory.CreateObject("googlefactory/authorizationfactory", true) as IGoogleAuthorizationFactory;
         }
 
 
@@ -23,9 +22,8 @@ namespace Paragon.Sitecore.GoogleAnalyticsChart.Utilities
         /// <returns></returns>
         public static IGoogleReportingFactory GetGoogleReportingFactory()
         {
-            return ServiceLocator.ServiceProvider.GetService((typeof(IGoogleReportingFactory))) as IGoogleReportingFactory;
-            //return GET FROM DI Container
-            //return Sitecore.Configuration.Factory.CreateObject("googlefactory/reportingfactory", true) as IGoogleReportingFactory;
+            
+            return Factory.CreateObject("googlefactory/reportingfactory", true) as IGoogleReportingFactory;
         }
     }
     

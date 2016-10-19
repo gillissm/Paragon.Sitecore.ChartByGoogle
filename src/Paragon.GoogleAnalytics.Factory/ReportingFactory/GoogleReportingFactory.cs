@@ -124,8 +124,7 @@ namespace Paragon.GoogleAnalytics.Factory.ReportingFactory
 
                 // Create the ReportRequest object.
                 ReportRequest request = new ReportRequest();
-                //request.ViewId = "63307962";//Paragon Consulting
-                request.ViewId = RequestOptionalValues.ProfileID.Replace("ga:", ""); //"126011915"; //Coffeehouse All Site Traffic
+                request.ViewId = RequestOptionalValues.ProfileID.Replace("ga:", "");
                 request.DateRanges = new List<DateRange>() { dateRange };
                 request.Dimensions = allDimensions;
                 request.Metrics = allMetrics;

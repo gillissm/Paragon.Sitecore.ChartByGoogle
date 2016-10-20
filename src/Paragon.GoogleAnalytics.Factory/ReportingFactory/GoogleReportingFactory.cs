@@ -79,14 +79,7 @@ namespace Paragon.GoogleAnalytics.Factory.ReportingFactory
                             grd.DataRows.Add(row.Dimensions.ToList());
                         }
                     }
-                    grd.NextPageToken = !string.IsNullOrWhiteSpace(r.NextPageToken) ? r.NextPageToken : "";
-                    ////I DON"T THINK THIS IS RIGHT
-                    //if (!string.IsNullOrWhiteSpace(r.NextPageToken))
-                    //{
-                    //    rptResponse = rptRequest.Execute();
-                    //}
-                    //else
-                    //    rptRequest = null;
+                    grd.NextPageToken = !string.IsNullOrWhiteSpace(r.NextPageToken) ? r.NextPageToken : "";                    
                 }
 
 

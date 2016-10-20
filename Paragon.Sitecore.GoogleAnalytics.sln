@@ -7,6 +7,10 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Core", "src\TDS.Core\TD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documents", "_Documents", "{02A55BCC-36C1-440E-9AB8-42718F2CA720}"
 	ProjectSection(SolutionItems) = preProject
+		_Documents\Paragon Sitecore ChartByGoogle_81-1.zip = _Documents\Paragon Sitecore ChartByGoogle_81-1.zip
+		_Documents\Paragon Sitecore ChartByGoogle_81.xml = _Documents\Paragon Sitecore ChartByGoogle_81.xml
+		_Documents\Paragon Sitecore ChartByGoogle_82-1.zip = _Documents\Paragon Sitecore ChartByGoogle_82-1.zip
+		_Documents\Paragon Sitecore ChartByGoogle_82.xml = _Documents\Paragon Sitecore ChartByGoogle_82.xml
 		_Documents\README.md = _Documents\README.md
 	EndProjectSection
 EndProject

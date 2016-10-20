@@ -1,0 +1,187 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Paragon Sitecore ChartByGoogle_82</PackageName>
+      <Author>Scott Gillis</Author>
+      <Version>1</Version>
+      <Revision />
+      <License />
+      <Comment>To be used by Sitecore 8.2 or above!
+Should only be placed on a Content Management Server!</Comment>
+      <Attributes />
+      <Readme>### Sitecore artifacts
+When either installing from the package or syncing from TDS the following items will be added to your Sitecore content tree.
+All items are added to the CORE database!
+
+* Custom SPEAK UI charting rendering 
+    * db:CORE -&gt; sitecore \ client \ Your Apps \ Paragon_GoogleAnalytics \ Layouts \ Renderings \ ChartByGoogle
+* Rendering Parameters to support custom component
+    * db:CORE -&gt; sitecore \ client \ Your Apps \ Paragon_GoogleAnalytics \ Layouts \ Renderings \ ChartByGoogle_Paramters
+* Rendering Parameter base template
+    * db:CORE -&gt; sitecore \ client \ Your Apps \ Paragon_GoogleAnalytics \ Templates \ GoogleReportBaseParameters
+* SPEAK UI 2.0 Dashboard Page Branch template
+    * db:CORE -&gt; sitecore \ client \ Your Apps \ Paragon_GoogleAnalytics \ Templates \ Branches \ Speak20 \ Dashboard20
+* Sample Dashboard Page with a sinlge ChartByGoogle control
+    * db:CORE -&gt; sitecore \ client \ Your Apps \ Paragon_GoogleAnalytics \ Layouts \ Renderings \ ChartByGoogle
+    * This page is based on the above custom SPEAK UI 2.0 branch template
+
+### File System
+The deployment involves the following files on the file system:
+* &lt; webroot &gt; / bin / Newtonsoft.Json.dll
+    * this will be version 7.0.0 and is required by Google's assemblies
+* &lt; webroot &gt; / bin / Google.Apis.Analytics.v3.dll
+* &lt; webroot &gt; / bin / Google.Apis.AnalyticsReporting.v4.dll
+* &lt; webroot &gt; / bin / Google.Apis.Auth.dll
+* &lt; webroot &gt; / bin / Google.Apis.Auth.PlatformServices.dll
+* &lt; webroot &gt; / bin / Google.Apis.Core.dll
+* &lt; webroot &gt; / bin / Google.Apis.dll
+* &lt; webroot &gt; / bin / Google.Apis.PlatformServices.dll
+* &lt; webroot &gt; / bin / Paragon.GoogleAnalytics.Factory.dll
+* &lt; webroot &gt; / bin / Paragon.GoogleAnalytics.Repository.dll
+* &lt; webroot &gt; / bin / Paragon.Sitecore.GoogleAnalyticsChart.dll
+* &lt; webroot &gt; / App_Config / Include / z.Pargon.GoogleAnalyticsChart / z.Paragon.GoogleAnalyticsChart.config
+* &lt; webroot &gt; / sitecore / shell / client / Applications / GoogleAnalytics / Components / ChartByGoogle / ChartByGoogle.cshtml
+* &lt; webroot &gt; / sitecore / shell / client / Applications / GoogleAnalytics / Components / ChartByGoogle / ChartByGoogle.js
+* &lt; webroot &gt; / sitecore / shell / client / Applications / GoogleAnalytics / Scripts / GA.js
+
+## How to Use
+1. Install the included Sitecore package or sync via TDS
+    a. This only should be installed on a CM server!
+2. Login to Google Anayltics and create a service account, see https://developers.google.com/identity/protocols/OAuth2ServiceAccount
+3. Save the .JSON  and .P12 files provided to the data folder on the CM server
+4. Update the following values in z.Paragon.GoogleAnalyticsChart.config 
+    a. JsonService with the file name of the .JSON
+    b. P12Service with the file name of .P2 file
+    c. AccountEmail wiht the email address supplied as part of the service account created
+5. The Google API assemblies have a dependicie on Newtonsoft.Json verision 7 so you must update your web.config with the following
+``` xml
+      &lt;dependentAssembly&gt;
+        &lt;assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" /&gt;
+        &lt;bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="7.0.0.0" /&gt;
+      &lt;/dependentAssembly&gt;
+```
+6. Open Sitecore Expierience Analytics and you should find a new report page named 'Google Anayltics'
+7. Add the new control as needed to new pages. </Readme>
+      <Publisher>Paragon</Publisher>
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Google Analytics/{311A5661-85EA-4796-A144-DD08DCF0D014}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Google Analytics/Overview/{D2EBB84A-3E48-4130-9075-2DA6F6FFC530}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Google Analytics/Overview/PageSettings/{317C67FC-3A74-4377-8432-414B3FDD0858}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Google Analytics/Overview/PageSettings/ChartByGoogle1/{29328702-869E-4BF1-B805-7BB1CC8E17B6}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Applications/ExperienceAnalytics/Dashboard/Google Analytics/Overview/PageSettings/Page-Stylesheet-File/{03154F5F-840D-4000-8B91-01AF163B1278}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/{C96392F9-503A-4E2A-BF8C-598862A9D3E8}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Layouts/{81D51E48-481E-4ED4-BB6D-19C56BF9DC31}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Layouts/Renderings/{A7384249-CFC3-4B7C-B951-6E2AA0871C77}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Layouts/Renderings/ChartByGoogle/{418D5DC7-4B0D-4528-838D-8242C770CC20}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Layouts/Renderings/ChartByGoogle/ChartByGoogle-Parameters/__Standard Values/{828FA522-CA72-4A75-86A9-AF70D6679B0E}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Layouts/Renderings/ChartByGoogle/ChartByGoogle-Parameters/{8D8FD433-AA8D-4C6F-8C1B-19387CCACD9A}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Layouts/Renderings/ChartByGoogle/ChartByGoogle-Parameters/Chart By Google/{120D0190-0832-464D-A218-B7C5DC573660}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Layouts/Renderings/ChartByGoogle/ChartByGoogle-Parameters/Chart By Google/ChartByGoogleEndDate/{560BD416-EB3F-4309-A1AC-3A63B58CAD55}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Layouts/Renderings/ChartByGoogle/ChartByGoogle-Parameters/Chart By Google/ChartByGoogleStartDate/{32EA9919-86C5-4071-BAF1-A392A55C3AD1}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/{6D0C460E-D49F-4A8F-BB50-B99FB8BE54D6}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/Branches/{E19CE23F-C2EB-4557-9E99-6ABA11F977BB}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/Branches/Speak20/{05D34971-F2B3-41B2-B612-D3956B9B55AB}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/Branches/Speak20/Dashboard20/$name/{C2ADA069-C4BC-46E3-B4C4-62CAFD33F7BA}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/Branches/Speak20/Dashboard20/$name/PageSettings/{B0C5C7A9-0BAD-4F5D-9D84-1D779787035F}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/Branches/Speak20/Dashboard20/$name/PageSettings/Page-Stylesheet-File/{11E12671-8549-4157-A571-BB35EB91E3CF}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/Branches/Speak20/Dashboard20/{79BB8DBD-9AE5-42D8-AE90-0EF2BDFAC4B6}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/__Standard Values/{B2D1FE21-FE0A-45DA-9854-0B17A17B7505}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/{60277B4B-C561-4544-B6DD-2485B1E095F7}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/{AAF450BD-964D-4ECF-B2EA-27684DAC2B3A}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/ChartType/{4908DEEB-C76A-43A2-A2F8-EBFCA8EE6370}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/Dimensions/{A6FDEB5C-E5B3-4888-86FB-2D6BABB1718C}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/Filter/{278C7A5D-7685-4343-B95D-ACDA289EE9F2}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/MaxResult/{F5293DBD-E40C-49BB-A741-F007B3378748}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/Metrics/{60E4C6B8-6D8A-4D71-B664-792E11B3EB66}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/ProfileId/{3E206657-F219-47DC-8DB6-40564E4D75A8}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/ReportTitle/{3CF7EF65-A1D5-41D1-8906-0BE8FF829618}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/Segment/{8F8BCDB7-5C35-43EC-9BE6-ED4D38AE4CB6}/invariant/0</x-item>
+        <x-item>/core/sitecore/client/Your Apps/Paragon_GoogleAnalytics/Templates/GoogleReportBaseParameters/Google Report Request Fields/Sort/{1D2A720C-BE58-423F-A992-6DB27A70EEBC}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Paragon</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Google.Apis.Analytics.v3.dll</x-item>
+        <x-item>/bin/Google.Apis.AnalyticsReporting.v4.dll</x-item>
+        <x-item>/bin/Google.Apis.Auth.dll</x-item>
+        <x-item>/bin/Google.Apis.Auth.PlatformServices.dll</x-item>
+        <x-item>/bin/Google.Apis.Authentication.OAuth2.dll</x-item>
+        <x-item>/bin/Google.Apis.Core.dll</x-item>
+        <x-item>/bin/Google.Apis.dll</x-item>
+        <x-item>/bin/Google.Apis.PlatformServices.dll</x-item>
+        <x-item>/bin/Google.Apis.Plus.v1.dll</x-item>
+        <x-item>/bin/Paragon.GoogleAnalytics.Factory.dll</x-item>
+        <x-item>/bin/Paragon.GoogleAnalytics.Repository.dll</x-item>
+        <x-item>/bin/Paragon.Sitecore.GoogleAnalyticsChart.dll</x-item>
+        <x-item>/sitecore/shell/client/Applications/GoogleAnalytics/Components/ChartByGoogle/ChartByGoogle.cshtml</x-item>
+        <x-item>/sitecore/shell/client/Applications/GoogleAnalytics/Components/ChartByGoogle.js</x-item>
+        <x-item>/sitecore/shell/client/Applications/GoogleAnalytics/Scripts/GA.js</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Paragon</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/z.Pargon.GoogleAnalyticsChart/z.Paragon.GoogleAnalyticsChart.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Paragon</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

@@ -102,7 +102,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-Severity	Code	Description	Project	File	Line	Suppression State
-Error		Unable to resolve dependencies. 'Newtonsoft.Json 6.0.8' is not compatible with 'Google.Apis.Core 1.17.0 constraint: Newtonsoft.Json (>= 7.0.1)'.
